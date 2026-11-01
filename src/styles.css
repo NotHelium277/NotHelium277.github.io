@@ -11,4 +11,9 @@
 .mini-scene.website-scene{padding:0;background:#fff}.website-shot{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
 
 .contact-hero h1,.contact-hero .inner-lede{transition:color .25s ease}.contact-hero h1:hover,.contact-hero .inner-lede:hover{color:var(--mint)}.contact-hero h1:hover span{color:var(--paper)}
-
+.portrait-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
