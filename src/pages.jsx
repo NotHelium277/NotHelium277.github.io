@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { reveal, SectionLabel, ButtonLink } from './site.jsx';
 import { Laptop } from './laptop.jsx';
+import portraitImage from './assets/photoforportfolio.jpg';
 
 const services = [
   { n: '01', title: 'SEO that compounds', text: 'Improve search visibility with considered strategy, technical foundations, and useful content.', tags: ['SEO strategy', 'Technical SEO', 'Keyword research'] },
@@ -22,7 +23,7 @@ export function Home() {
 
 export function About() {
  return <motion.main {...reveal}><section className="inner-hero page-shell"><SectionLabel>A LITTLE ABOUT ME</SectionLabel><h1>Curious by nature.<br/><span>Practical by design.</span></h1><p className="inner-lede">I’m Hasib, an independent digital partner helping businesses make their online presence work harder and feel more like them.</p><div className="about-portrait"><div className="portrait-art">
-  <img src="/src/assets/photoforportfolio.jpg" alt="Md Hasib Mozumder" />
+  <img src={portraitImage} alt="Md Hasib Mozumder" />
 </div><div><span className="portrait-caption">A NOTE FROM THE STUDIO</span><p>Real progress starts with listening. I take time to understand the people, the problem, and what a good outcome actually looks like.</p></div></div></section>
  <section className="about-story"><div className="page-shell story-grid"><SectionLabel>THE WAY I WORK</SectionLabel><div><h2>Thoughtful from<br/>the <span>first hello.</span></h2><p>Digital can get noisy. My approach is to make it useful: clear thinking, honest collaboration, and work that earns its place in your business.</p><p>My practice brings together search, web development, and digital marketing. That means fewer disconnected tactics and more decisions that support one another, from the foundations of your site to the campaigns that bring people there.</p><p>I connect SEO, web development, and paid media to support business growth.</p></div></div></section>
  <section className="capabilities page-shell"><SectionLabel>AREAS OF FOCUS</SectionLabel><h2>Good at seeing<br/><span>the whole picture.</span></h2><div className="cap-grid">{[['01','Search & visibility','SEO strategy · Technical foundations · Content'],['02','Web & experience','Web development · UX thinking · Performance'],['03','Marketing & growth','Digital strategy · Paid advertising · Analytics']].map(x=><div className="cap-card" key={x[0]}><span>{x[0]}</span><h3>{x[1]}</h3><p>{x[2]}</p></div>)}</div></section>
